@@ -1,0 +1,505 @@
+<!DOCTYPE html>h
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+  .jumbotron {
+      background-image: url("data:image/jpeg;base64,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");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #green;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      max-width: 200px;
+      max-height: 300px;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e;
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #143234;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+
+<!-- ************************************************** -->
+<!-- *****THIS IS WHERE THE BODY OF CODE BEGINS******** -->
+<!-- ************************************************** -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- ************************************************** -->
+<!-- *******THIS IS WHERE THE NAV BAR BEGINS ********** -->
+<!-- ************************************************** -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Super Video</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">Solutions</a></li>
+        <li><a href="#portfolio">PEOPLE</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ************************************************** -->
+<!-- *******THIS IS WHERE THE JUMBOTRON BEGINS ******** -->
+<!-- ************************************************** -->
+
+<div class="jumbotron text-center">
+  <h1>Super video</h1>
+  <p>The mobile Cinema in your pocket</p>
+  <form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+    <button type="button" class="btn btn-danger">Subscribe</button>
+  </form>
+</div>
+
+<!-- ************************************************** -->
+<!-- *****THIS IS WHERE THE ABOUT SECTION BEGINS ****** -->
+<!-- ************************************************** -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Super Video</h2><br>
+      <h4>Athleticam was created out of the need to better analayze sports peformance and make most of practice time. </h4><br>
+      <p></p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-film logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-usd logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>How this works</h2><br>
+      <p>1. You nned pay 20$ for create your id.</p>
+      <p>2. You can login and watch the video whatever you want.</p>
+      <p>3.You need to pay once after thirty days of your payment.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SOLUTIONS</h2>
+  <h4>The problems we solve</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-credit-card logo-small"></span>
+      <h4>RECHARGE</h4>
+      <p>You can Renewal fee at here</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-question-sign logo-small"></span>
+      <h4 style="color:#303030;">QUESTIONS</h4>
+      <p>If you have any questions you can email us.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+      <h4>LIKE</h4>
+      <p>If you like company, you can give us some praise</p>
+    </div>
+  </div>
+  <br><br>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Our People</h2><br>
+  <h4>Our Amazing Team</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="file:///Users/msstudent/Downloads/IMG_2184.JPG" alt="Selfie">
+        <p><strong>Mr.Wang</strong></p>
+        <p>Founder and CEO</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/LeBron_James_%2815847318851%29.jpg/1200px-LeBron_James_%2815847318851%29.jpg" >
+        <p><strong>Mr.LeBron</strong></p>
+        <p>Chief Financial Officer</p>
+      </div>
+    </div>
+  </div><br>
+
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"The best website in the world"<br><span style="font-style:normal;">Cristiano Ronaldo, Soccer</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word...AMAZING"<br><span style="font-style:normal;">Kyrie Irving, Cleveland Cavaliers</span></h4>
+      </div>
+      <div class="item">
+        <h4>"What a super video!!!"<br><span style="font-style:normal;">Taylor Swift</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+        </div>
+        <div class="panel-footer">
+          <h3>$20</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+        </div>
+        <div class="panel-footer">
+          <h3>$35</h3>
+          <h4>two month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+        </div>
+        <div class="panel-footer">
+          <h3>$50</h3>
+          <h4>three month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 847.777.7878</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By Bill Wang</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
+
